@@ -1,21 +1,221 @@
 <!DOCTYPE html>
-    <html>
-    <head>
-      <meta charset='utf-8'>
-      <meta name='viewport' content='width=device-width'>
-      <title>Privacy Policy</title>
-      <style> body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding:1em; } </style>
-    </head>
-    <body>
-    <strong>Privacy Policy</strong><p>This privacy policy applies to the Savings Calculator app (hereby referred to as "Application") for mobile devices that was created by Phan Nhat Dang (hereby referred to as "Service Provider") as a Freemium service. This service is intended for use "AS IS".</p><br><strong>Information Collection and Use</strong><p>The Application collects information when you download and use it. This information may include information such as </p><ul><li>Your device's Internet Protocol address (e.g. IP address)</li><li>The pages of the Application that you visit, the time and date of your visit, the time spent on those pages</li><li>The time spent on the Application</li><li>The operating system you use on your mobile device</li></ul><p></p><br><p style="display: none;">The Application does not gather precise information about the location of your mobile device.</p><div style=""><p>The Application collects your device's location, which helps the Service Provider determine your approximate geographical location and make use of in below ways:</p><ul><li>Geolocation Services: The Service Provider utilizes location data to provide features such as personalized content, relevant recommendations, and location-based services.</li><li>Analytics and Improvements: Aggregated and anonymized location data helps the Service Provider to analyze user behavior, identify trends, and improve the overall performance and functionality of the Application.</li><li>Third-Party Services: Periodically, the Service Provider may transmit anonymized location data to external services. These services assist them in enhancing the Application and optimizing their offerings.</li></ul></div><br><p>The Service Provider may use the information you provided to contact you from time to time to provide you with important information, required notices and marketing promotions.</p><br><p>For a better experience, while using the Application, the Service Provider may require you to provide us with certain personally identifiable information, including but not limited to phannhatd@gmail.com. The information that the Service Provider request will be retained by them and used as described in this privacy policy.</p><br><strong>Third Party Access</strong><p>Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service. The Service Provider may share your information with third parties in the ways that are described in this privacy statement.</p><div><br><p>Please note that the Application utilizes third-party services that have their own Privacy Policy about handling data. Below are the links to the Privacy Policy of the third-party service providers used by the Application:</p><ul><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><li><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat</a></li><!----><!----><!----><!----></ul></div><br><p>The Service Provider may disclose User Provided and Automatically Collected Information:</p><ul><li>as required by law, such as to comply with a subpoena, or similar legal process;</li><li>when they believe in good faith that disclosure is necessary to protect their rights, protect your safety or the safety of others, investigate fraud, or respond to a government request;</li><li>with their trusted services providers who work on their behalf, do not have an independent use of the information we disclose to them, and have agreed to adhere to the rules set forth in this privacy statement.</li></ul><p></p><br><strong>Opt-Out Rights</strong><p>You can stop all collection of information by the Application easily by uninstalling it. You may use the standard uninstall processes as may be available as part of your mobile device or via the mobile application marketplace or network.</p><br><strong>Data Retention Policy</strong><p>The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. If you'd like them to delete User Provided Data that you have provided via the Application, please contact them at phannhatd@gmail.com and they will respond in a reasonable time.</p><br><strong>Children</strong><p>The Service Provider does not use the Application to knowingly solicit data from or market to children under the age of 13.</p><div><br><p>The Application does not address anyone under the age of 13.
-The Service Provider does not knowingly collect personally
-identifiable information from children under 13 years of age. In the case
-the Service Provider discover that a child under 13 has provided
-personal information, the Service Provider will immediately
-delete this from their servers. If you are a parent or guardian
-and you are aware that your child has provided us with
-personal information, please contact the Service Provider (phannhatd@gmail.com) so that
-they will be able to take the necessary actions.</p></div><!----><br><strong>Security</strong><p>The Service Provider is concerned about safeguarding the confidentiality of your information. The Service Provider provides physical, electronic, and procedural safeguards to protect information the Service Provider processes and maintains.</p><br><strong>Changes</strong><p>This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any changes to the Privacy Policy by updating this page with the new Privacy Policy. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.</p><br><p>This privacy policy is effective as of 2024-10-02</p><br><strong>Your Consent</strong><p>By using the Application, you are consenting to the processing of your information as set forth in this Privacy Policy now and as amended by us.</p><br><strong>Contact Us</strong><p>If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at phannhatd@gmail.com.</p><hr>
-    </body>
-    </html>
-      
+<html>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width'>
+<title>Privacy Policy</title>
+
+<style>
+body { font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; padding:1em; line-height:1.6;}
+h2 { margin-top:1.5em;}
+
+.lang-buttons{
+margin-bottom:20px;
+}
+
+.lang-buttons button{
+padding:8px 14px;
+margin-right:8px;
+border:1px solid #ccc;
+background:#f5f5f5;
+cursor:pointer;
+border-radius:6px;
+}
+
+.lang-buttons button.active{
+background:#000;
+color:#fff;
+border-color:#000;
+}
+
+.lang-content{
+display:none;
+}
+
+.lang-content.active{
+display:block;
+}
+</style>
+</head>
+
+<body>
+
+<div class="lang-buttons">
+<button id="btn-en" class="active" onclick="showLang('en')">English</button>
+<button id="btn-vi" onclick="showLang('vi')">Tiếng Việt</button>
+</div>
+
+
+<div id="en" class="lang-content active">
+
+<h1>Privacy Policy</h1>
+
+<p>This privacy policy applies to the Savings Calculator app (the “Application”) developed by Phan Nhat Dang (“Service Provider”) as a freemium service. This service is provided as-is.</p>
+
+<h2>Information Collection and Use</h2>
+
+<p>The Application performs savings and investment calculations directly on your device. Information you enter (such as savings amount, interest rate, contribution amount, or time period) is processed locally on your device.</p>
+
+<p><strong>No personally identifiable information</strong> (such as your name, email address, or contact information) is collected by the Application.</p>
+
+<p>The Application does not upload your financial calculation data to any server.</p>
+
+<p>In some cases, the Application may collect limited non-personal technical information such as:</p>
+
+<ul>
+<li>Device information (e.g., device model, operating system version)</li>
+<li>Anonymous usage statistics</li>
+<li>Crash reports</li>
+</ul>
+
+<p>This information is collected anonymously to improve the performance and stability of the Application.</p>
+
+
+<h2>Use of Artificial Intelligence in Content Creation</h2>
+
+<p>Some illustrations, icons, or language refinements used in the Application may be generated or assisted by artificial intelligence technologies during the content creation process.</p>
+
+<p>AI tools are used only to assist with design, illustration, or translation. They do not provide financial advice.</p>
+
+<p>The Application is intended as a financial calculator for educational and informational purposes only.</p>
+
+
+<h2>Third-Party Services</h2>
+
+<p>The Application may use trusted third-party services to improve functionality and manage purchases.</p>
+
+<ul>
+<li><strong>Firebase</strong> – anonymous analytics and crash reporting</li>
+<li><strong>RevenueCat</strong> – handling in-app purchases and subscriptions</li>
+</ul>
+
+<p>These services may collect limited technical information (such as device identifiers or purchase events) but do not receive your financial calculation inputs.</p>
+
+<p>Links to their privacy policies:</p>
+
+<ul>
+<li><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase</a></li>
+<li><a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat</a></li>
+</ul>
+
+
+<h2>Your Privacy Choices</h2>
+
+<p>You may stop all data collection by uninstalling the Application.</p>
+
+<p>If you have any questions regarding privacy, please contact:</p>
+
+<p><strong>Email:</strong> phannhatd@gmail.com</p>
+
+
+<h2>Children’s Privacy</h2>
+
+<p>The Application does not knowingly collect personal data from children under the age of 13.</p>
+
+
+<h2>Security</h2>
+
+<p>Most financial calculation data remains stored locally on your device. Reasonable safeguards are used to protect the Application.</p>
+
+
+<h2>Changes to This Policy</h2>
+
+<p>This Privacy Policy may be updated from time to time. Any changes will be posted on this page with a revised effective date.</p>
+
+<p><strong>Effective Date:</strong> 2026-03-04</p>
+
+<p><strong>Contact:</strong> phannhatd@gmail.com</p>
+
+</div>
+
+
+
+<div id="vi" class="lang-content">
+
+<h1>Chính sách quyền riêng tư</h1>
+
+<p>Chính sách quyền riêng tư này áp dụng cho ứng dụng Savings Calculator (gọi là “Ứng dụng”) được phát triển bởi Phan Nhat Dang (“Nhà cung cấp dịch vụ”) dưới hình thức freemium. Dịch vụ được cung cấp và sử dụng theo hiện trạng.</p>
+
+<h2>Thu thập và sử dụng thông tin</h2>
+
+<p>Ứng dụng thực hiện các phép tính tiết kiệm và đầu tư trực tiếp trên thiết bị của bạn. Các thông tin bạn nhập (ví dụ: số tiền tiết kiệm, lãi suất, mức đóng góp định kỳ hoặc thời gian tiết kiệm) được xử lý ngay trên thiết bị.</p>
+
+<p><strong>Ứng dụng không thu thập thông tin nhận dạng cá nhân</strong> (như tên, email hoặc thông tin liên hệ của bạn).</p>
+
+<p>Dữ liệu tính toán tài chính của bạn không được gửi lên bất kỳ máy chủ nào.</p>
+
+<p>Trong một số trường hợp, Ứng dụng có thể thu thập dữ liệu kỹ thuật không mang tính cá nhân như:</p>
+
+<ul>
+<li>Thông tin thiết bị (ví dụ: mẫu thiết bị, phiên bản hệ điều hành)</li>
+<li>Thống kê sử dụng ứng dụng ẩn danh</li>
+<li>Báo cáo lỗi ứng dụng</li>
+</ul>
+
+<p>Dữ liệu này được thu thập ẩn danh nhằm cải thiện hiệu suất và độ ổn định của Ứng dụng.</p>
+
+
+<h2>Sử dụng Trí tuệ Nhân tạo trong quá trình tạo nội dung</h2>
+
+<p>Một số hình minh họa, biểu tượng hoặc nội dung diễn đạt trong Ứng dụng có thể được tạo ra hoặc hỗ trợ bởi các công nghệ trí tuệ nhân tạo trong quá trình xây dựng nội dung.</p>
+
+<p>Các công cụ AI chỉ được sử dụng nhằm hỗ trợ thiết kế hình ảnh hoặc dịch thuật. AI không đưa ra tư vấn tài chính.</p>
+
+<p>Ứng dụng chỉ là công cụ tính toán tài chính mang tính tham khảo và giáo dục.</p>
+
+
+<h2>Dịch vụ bên thứ ba</h2>
+
+<p>Ứng dụng có thể sử dụng các dịch vụ bên thứ ba đáng tin cậy để cải thiện chức năng và quản lý mua hàng:</p>
+
+<ul>
+<li><strong>Firebase</strong>: phân tích ẩn danh và báo cáo lỗi</li>
+<li><strong>RevenueCat</strong>: xử lý mua hàng trong ứng dụng và đăng ký</li>
+</ul>
+
+
+<h2>Lựa chọn quyền riêng tư của bạn</h2>
+
+<p>Bạn có thể ngừng mọi hoạt động thu thập dữ liệu bằng cách gỡ cài đặt ứng dụng.</p>
+
+<p>Nếu có câu hỏi liên quan đến quyền riêng tư, vui lòng liên hệ:</p>
+
+<p><strong>Email:</strong> phannhatd@gmail.com</p>
+
+
+<h2>Quyền riêng tư của trẻ em</h2>
+
+<p>Ứng dụng không cố ý thu thập dữ liệu cá nhân từ trẻ em dưới 13 tuổi.</p>
+
+
+<h2>Bảo mật</h2>
+
+<p>Phần lớn dữ liệu tính toán tài chính được lưu trữ trực tiếp trên thiết bị của bạn.</p>
+
+
+<h2>Thay đổi chính sách</h2>
+
+<p>Chính sách này có thể được cập nhật theo thời gian. Mọi thay đổi sẽ được đăng trên trang này kèm ngày hiệu lực mới.</p>
+
+<p><strong>Ngày hiệu lực:</strong> 2026-03-04</p>
+
+<p><strong>Liên hệ:</strong> phannhatd@gmail.com</p>
+
+</div>
+
+
+<script>
+function showLang(lang){
+document.getElementById('en').classList.remove('active');
+document.getElementById('vi').classList.remove('active');
+
+document.getElementById('btn-en').classList.remove('active');
+document.getElementById('btn-vi').classList.remove('active');
+
+document.getElementById(lang).classList.add('active');
+document.getElementById('btn-'+lang).classList.add('active');
+}
+</script>
+
+</body>
+</html>
